@@ -1,2 +1,2 @@
-# gleif
-Global LEI foundation API.
+# Global LEI foundation API
+
