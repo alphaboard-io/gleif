@@ -1,33 +1,37 @@
 {
-  "name": "gleif",
-  "version": "0.1.0",
-  "description": "Global LEI Foundation API wrapper.",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "lint": "prettier --check {src,test}/**/*.ts",
-    "format": "prettier --write {src,test}/**/*.ts",
-    "prepare": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:alphaboard-io/gleif.git"
-  },
-  "keywords": [
-    "GLEIF",
-    "LEI",
-    "ISIN"
-  ],
-  "author": "Alphaboard",
-  "license": "GNU",
-  "bugs": {
-    "url": "https://github.com/alphaboard-io/gleif/issues"
-  },
-  "homepage": "https://github.com/alphaboard-io/gleif#readme",
-  "devDependencies": {
-    "prettier": "^2.0.2",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.2"
-  }
+    "name": "gleif",
+    "version": "0.1.0",
+    "description": "Global LEI Foundation API wrapper.",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "lint": "prettier --check {src,test}/**/*.ts",
+        "format": "prettier --write {src,test}/**/*.ts",
+        "prepare": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com:alphaboard-io/gleif.git"
+    },
+    "keywords": [
+        "GLEIF",
+        "LEI",
+        "ISIN",
+        "api"
+    ],
+    "author": "Alphaboard",
+    "license": "GNU",
+    "bugs": {
+        "url": "https://github.com/alphaboard-io/gleif/issues"
+    },
+    "homepage": "https://github.com/alphaboard-io/gleif#readme",
+    "engines": {
+        "node": ">=18"
+    },
+    "devDependencies": {
+        "prettier": "^2.0.2",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.0.2"
+    }
 }
