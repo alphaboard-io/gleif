@@ -12,12 +12,18 @@ npm install --save git+https://github.com/alphaboard-io/gleif.git
 
 ## Usage
 
+To use the API inside your code.
+
 ```
 import gleif from 'gleif';
 
 // Simple filter on Apple.
-const res = gleif.isin('US0378331005');
-if (res.ok) {
-    console.log(res.record);
-} else { console.log(res.error); }
+const record = gleif.isin('US0378331005');
+console.log(record);
+```
+
+To try the API from the command line (requires Node.js v14).
+
+```
+node -e "import('./build/index.js').then(x => x.isin('US0378331005')).then(rec => console.log(rec));"
 ```
