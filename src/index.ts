@@ -7,7 +7,7 @@ export type leiRecord = {
     relationships: any;
 };
 
-export async function isin(isin: string): Promise<leiRecord> {
+async function isin(isin: string): Promise<leiRecord> {
     const url = BASE_URL.concat('/lei-records');
     const params = '?filter[isin]='.concat(isin);
 
@@ -25,3 +25,7 @@ export async function isin(isin: string): Promise<leiRecord> {
         } else throw new Error(`${isin} not found.`);
     } else throw new Error('Invalid response: ' + response.statusText);
 }
+
+export default {
+    isin,
+} as const;
